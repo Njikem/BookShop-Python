@@ -1,0 +1,15 @@
+call post_user('Therese', 'Ajong', '168 Edgemon Way', '780-210-2205', 'theresegamil.com', 'therese89');
+call get_user();
+call patch_user(3,'therese@gmail.com', 'therese89');
+call verified_user_token('100956901692407841');
+call login_user('theresegamil.com', 'therese89'); 
+call delete_user(3, 'therese89'); 
+call delete_login(3, 'therese89');
+
+
+
+
+call post_bookshop('Anum', 'audrayone@gmail.com', 'audray99', '165 Enright Way', '780-302-2065'); 
+
+SELECT b.id, b.email
+FROM bookshop.bookshop_session bs inner join bookshop b on bs.bookshop_id =b.id;
